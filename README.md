@@ -53,11 +53,11 @@ cd naira-classification
 ```
 
 ## Step 2: Install Dependencies
-```sh
+
 Ensure you have **Python 3.8+** installed, then run:
 
 
-
+```sh
 pip install -r requirements.
 ```
 
