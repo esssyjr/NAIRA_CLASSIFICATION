@@ -1,0 +1,8 @@
+tensorflow
+matplotlib
+gradio
+numpy
+opencv-python
+gtts
+pickle5
+

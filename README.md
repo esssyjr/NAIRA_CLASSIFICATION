@@ -1,27 +1,34 @@
 # NAIRA_CLASSIFICATION
 
 ## Overview
-In an era where automation is becoming increasingly prevalent, the need for accurate and efficient systems is in each and every sector is paramount. To contribute to this
-technological advancement, I have developed a Naira classification model.This model aims to identify the denominations of Nigerian Naira banknotes, 
-including 5, 10, 20, 50, 100, 200, 500, and 1000 Naira notes. Such a model can be seamlessly integrated into various automated systems, including cash deposit machines, 
-currency sorting machines, and more.
+In an era where automation is becoming increasingly prevalent, the need for accurate and efficient systems in every sector is paramount. To contribute to this technological advancement, I have developed a **Naira Classification Model**.  
+
+This model identifies the denominations of Nigerian Naira banknotes, including **₦5, ₦10, ₦20, ₦50, ₦100, ₦200, ₦500, and ₦1000**. The model can be integrated into various automated systems such as **cash deposit machines, currency sorting machines, and retail checkout systems**.
 
 ## Dataset
 The model was trained on a dataset consisting of the following number of images for each denomination:
-- 137 images of 5 Naira notes
-- 138 images of 10 Naira notes
-- 236 images of 20 Naira notes
-- 250 images of 50 Naira notes
-- 278 images of 100 Naira notes
-- 210 images of 200 Naira notes
-- 277 images of 500 Naira notes
-- 210 images of 1000 Naira notes
 
-28 images were used for validation, except for 5 Naira notes, which had 20 validation images. Additionally, 8 images were reserved for testing each denomination.
+| Denomination | Training Images | Validation Images | Test Images |
+|-------------|----------------|-------------------|-------------|
+| ₦5          | 137            | 20               | 8           |
+| ₦10         | 138            | 28               | 8           |
+| ₦20         | 236            | 28               | 8           |
+| ₦50         | 250            | 28               | 8           |
+| ₦100        | 278            | 28               | 8           |
+| ₦200        | 210            | 28               | 8           |
+| ₦500        | 277            | 28               | 8           |
+| ₦1000       | 210            | 28               | 8           |
+
+You can access the dataset on Kaggle:  
+[📂 Naira Nigerian Currency Dataset](https://www.kaggle.com/datasets/ismailismailtijjani/naira-nigerian-currency-dataset)
 
 ## Model Architecture
-The classification model employs transfer learning using MobileNet as the base architecture. With this approach, I achieved impressive results, with a training accuracy
-of 90% and a validation accuracy of 87%.
+The model utilizes **transfer learning with MobileNet** as the base architecture. The training results are:
+
+- **Training Accuracy:** 90%
+- **Validation Accuracy:** 87%
+
+Despite these results, some mismatch conflicts were observed, particularly between **₦20 and ₦50 notes**.
 
 ## Performance
 It's noteworthy that human-level performance in Naira classification is nearly perfect, approaching 100%. Consequently, the model is expected to near human performance,
@@ -35,11 +42,44 @@ representing different Naira denominations poses a significant obstacle to achie
 between 50 and 20 Naira notes, along with other minor issues, can be directly attributed to this dataset deficiency. Addressing this challenge by acquiring a more extensive 
 and diverse dataset will be paramount in improving the model's accuracy and generalizability.
 
+---
+
+## Installation & Usage
+
+### Step 1: Clone the Repository
+```sh
+git clone https://github.com/your-username/naira-classification.git
+cd naira-classification
+## Step 2: Install Dependencies
+Ensure you have **Python 3.8+** installed, then run:
+
+```sh
+pip install -r requirements.txt
+
+## Step 3: Download the Dataset
+Download the dataset from **[Kaggle](https://www.kaggle.com/datasets/ismailismailtijjani/naira-nigerian-currency-dataset)** and extract it into the project directory.
+
+## Step 4: Run the Application
+Start the **Gradio** interface:
+
+```sh
+python app.py
+The application will launch a web interface where you can **upload and classify Naira notes**.
+
+## Step 5: Test with the Dataset
+To test the model:
+
+1. **Open the Gradio UI.**  
+2. **Upload an image** of a Naira note.  
+3. Click **"Predict"** to see the classification result.  
+
+
 ## Future Improvements
 - Expansion of the dataset: Acquiring a more extensive collection of Naira images to improve the model's performance.
 - Fine-tuning and optimization: Continuously refining the model's architecture and training parameters to achieve even higher accuracy and efficiency.
 - Deployment and integration: Integrating the model into real-world applications such as automated teller machines (ATMs), currency sorting systems, and retail checkout
   processes to streamline operations and enhance user experience.
+
 ## Collaboration
 As a computer vision model developer, I acknowledge my limitations and recognize the importance of collaboration in making projects a reality. While I bring expertise 
 in developing models and algorithms, I understand that collaborative efforts can enhance the scope and impact of projects.
@@ -58,3 +98,6 @@ applications in Nigeria and beyond.
 
 For further inquiries or collaboration opportunities, you can contact the company via their email address:
 - Email: [ejaztech.ai@gmail.com]
+
+
+
