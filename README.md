@@ -47,13 +47,14 @@ and diverse dataset will be paramount in improving the model's accuracy and gene
 ## Installation & Usage
 
 ### Step 1: Clone the Repository
-```sh
+
 git clone https://github.com/your-username/naira-classification.git
 cd naira-classification
+
 ## Step 2: Install Dependencies
 Ensure you have **Python 3.8+** installed, then run:
 
-```sh
+
 pip install -r requirements.txt
 
 ## Step 3: Download the Dataset
@@ -62,7 +63,7 @@ Download the dataset from **[Kaggle](https://www.kaggle.com/datasets/ismailismai
 ## Step 4: Run the Application
 Start the **Gradio** interface:
 
-```sh
+
 python app.py
 The application will launch a web interface where you can **upload and classify Naira notes**.
 
