@@ -5,6 +5,25 @@ In an era where automation is becoming increasingly prevalent, the need for accu
 
 This model identifies the denominations of Nigerian Naira banknotes, including **₦5, ₦10, ₦20, ₦50, ₦100, ₦200, ₦500, and ₦1000**. The model can be integrated into various automated systems such as **cash deposit machines, currency sorting machines, and retail checkout systems**.
 
+## **Demo**  
+A live demo of the Naira Classification model is available on **Hugging Face Spaces**.  
+This interactive demo allows users to upload images of Nigerian banknotes and get instant classification results.  
+It provides an easy way to test the model without needing to install it locally.  
+
+🔗 **[Try the Demo on Hugging Face](#)** *(https://huggingface.co/spaces/esssyjr/NAIRA_CLASSIFICATION)*  
+
+---
+
+## **Academic Paper**  
+This model is part of an academic research study exploring the effectiveness of deep learning in currency classification.  
+The paper, titled **"
+Performance Comparison of Deep Learning Techniques in Naira Classification,"** presents the dataset,  
+methodology, and results achieved using MobileNet. It also discusses challenges like dataset limitations and potential improvements for future research.  
+
+📄 **[Read the Full Paper](#)** *(https://ijresonline.com/index.php?option=com_content&view=article&id=813&catid=9&Itemid=125)*  
+
+
+
 ## Dataset
 The model was trained on a dataset consisting of the following number of images for each denomination:
 
